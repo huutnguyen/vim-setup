@@ -45,7 +45,7 @@ let g:lightline = {
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }
 " set terminal font to the one with Powerline in its name
-" currently using Fira Mono Medim for Poerline Medium 12
+" currently using Incosolata for Powerline Bold 12
 
 " This block set the solarized color theme, not use when commented out
 "let g:solarized_termcolors=256

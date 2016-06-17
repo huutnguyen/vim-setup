@@ -1,0 +1,3 @@
+The following plugins were used in vim
+Ultimate vimrc from https://github.com/amix/vimrc
+Fuzz vim-colorschemes from https://github.com/flazz/vim-colorschemes

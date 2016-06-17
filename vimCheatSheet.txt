@@ -1,0 +1,123 @@
+Using NERDTree
+to open nerdtree type in :NERDTree
+t: Open the selected file in a new tab
+i: Open the selected file in a horizontal split window
+s: Open the selected file in a vertical split window
+I: Toggle hidden files
+m: Show the NERD Tree menu
+R: Refresh the tree, useful if files change outside of Vim
+?: Toggle NERD Tree's quick help
+
+
+
+Using tabs
+to open multiple files using with tabs vim -p file1 file2 ect
+gt            go to next tab
+gT            go to previous tab
+{i}gt         go to tab in position i
+http://vim.wikia.com/wiki/Using_tab_pages
+https://www.linux.com/learn/vim-tips-using-tabs
+
+
+using windows
+to open multiple files using windows vim -o file1 file2 file3
+-o to split the window horizontally(one on top of the other)
+-O to split the window vertically(one on left of the other)
+:sp file to split window horizontally and open a file in the new window
+:vsp file to split window vertically and open a file in the new window
+ctrl-w w	cycle between the open windows
+ctrl-w h	focus the window to the left
+ctrl-w j	focus the window to the down
+ctrl-w k	focus the window to the up
+ctrl-w l	focus the window to the right
+http://vimcasts.org/episodes/working-with-windows/
+:qa to close all window
+
+copy/paste
+v to select character(or V to select entire line or ctr-v to select rectangular blocks(kinda like hold shift and arrow in sublime and atom) )
+y to yank(it to copy the selected text)
+p to paste the text after cursor (P for before cursor)
+http://vim.wikia.com/wiki/Copy,_cut_and_paste
+
+to collapse/expanse brackets in javascripts (use in normal mode. Just type the characters as shown as is)
+                                                         zo
+ zo              Open one fold under the cursor.  When a count is given, that
+                 many folds deep will be opened.  In Visual mode one level of
+                 folds is opened for all lines in the selected area.
+
+                                                         zc
+ zc              Close one fold under the cursor.  When a count is given, that
+                 many folds deep are closed.  In Visual mode one level of folds
+                 is closed for all lines in the selected area.
+                 'foldenable' will be set.
+
+                                                         zR
+ zR              Open all folds.  This sets 'foldlevel' to highest fold level.
+
+                                                         zM
+ zM              Close all folds: set 'foldlevel' to 0.
+                 'foldenable' will be set.
+use zo and zc to fold and unfold in normal mode
+
+use zR and zM to fold and unfold all folds
+
+to search
+in nomral mode type: /textwantedtosearch
+use n to find the next instance of the textwantedtosearch (N for previous)
+
+relative line number(calc from where the cursor is)
+http://vim.wikia.com/wiki/Display_line_numbers
+
+other:
+http://vim.wikia.com/wiki/All_the_right_moves
+Vim provides many ways to move the cursor. Becoming familiar with them leads to more effective text editing.
+h   move one character left
+j   move one row down
+k   move one row up
+l   move one character right
+w   move to beginning of next word
+b   move to previous beginning of word
+e   move to end of word
+W   move to beginning of next word after a whitespace
+B   move to beginning of previous word before a whitespace
+E   move to end of word before a whitespace
+All the above movements can be preceded by a count; e.g. 4j moves down 4 lines.
+0   move to beginning of line
+$   move to end of line
+_   move to first non-blank character of the line
+g_  move to last non-blank character of the line
+
+gg  move to first line
+G   move to last line
+nG  move to n'th line of file (n is a number; 12G moves to line 12)
+
+H   move to top of screen
+M   move to middle of screen
+L   move to bottom of screen
+
+z.  scroll the line with the cursor to the center of the screen
+zt  scroll the line with the cursor to the top
+zb  scroll the line with the cursor to the bottom
+
+Ctrl-D  move half-page down
+Ctrl-U  move half-page up
+Ctrl-B  page up
+Ctrl-F  page down
+Ctrl-O  jump to last (older) cursor position
+Ctrl-I  jump to next cursor position (after Ctrl-O)
+
+n   next matching search pattern
+N   previous matching search pattern
+*   next whole word under cursor
+#   previous whole word under cursor
+g*  next matching search (not whole word) pattern under cursor
+g#  previous matching search (not whole word) pattern under cursor
+%   jump to matching bracket { } [ ] ( )
+
+fX  to next 'X' after cursor, in the same line (X is any character)
+FX  to previous 'X' before cursor (f and F put the cursor on X)
+tX  til next 'X' (similar to above, but cursor is before X)
+TX  til previous 'X'
+;   repeat above, in same direction
+
+
